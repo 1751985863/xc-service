@@ -105,6 +105,7 @@ public class PageService {
              cmsPage1.setSiteId(cmsPage.getSiteId());
              cmsPage1.setPagePhysicalPath(cmsPage.getPagePhysicalPath());
              cmsPage1.setPageWebPath(cmsPage.getPageWebPath());
+             cmsPage1.setDataUrl(cmsPage.getDataUrl());
              cmsPageRepository.save(cmsPage1);
              return new CmsPageResult(CommonCode.SUCCESS,cmsPage1);
         }

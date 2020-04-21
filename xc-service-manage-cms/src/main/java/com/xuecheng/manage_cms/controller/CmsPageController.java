@@ -62,7 +62,7 @@ public class CmsPageController implements CmsPageControllerApi {
     @Override
     @PutMapping("/edit/{id}")
     public CmsPageResult edit(@PathVariable String id,@RequestBody CmsPage cmsPage) {
-        return null;
+        return pageService.update(id,cmsPage);
     }
 
     @Override
